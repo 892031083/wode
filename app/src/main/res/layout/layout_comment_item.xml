@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="15dp"
+
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.example.wode.widget.CircleImageView
+        android:id="@+id/userAvatar"
+        android:scaleType="fitXY"
+        android:src="@drawable/icon_userdeful"
+        android:layout_width="40dp"
+        android:layout_height="40dp"/>
+    <TextView
+
+        android:text="username"
+        android:id="@+id/userName"
+        android:layout_toRightOf="@id/userAvatar"
+        android:textSize="15sp"
+        android:paddingLeft="8dp"
+        android:paddingTop="1dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_below="@id/userName"
+        android:text="2020.4.1"
+        android:id="@+id/commentDate"
+        android:layout_toRightOf="@id/userAvatar"
+        android:textSize="12sp"
+        android:paddingLeft="8dp"
+        android:paddingTop="1dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+
+        android:layout_alignLeft="@id/userName"
+        android:textSize="13sp"
+        android:id="@+id/coomentText"
+        android:maxLines="4"
+        android:paddingTop="5dp"
+        android:layout_below="@id/userAvatar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>

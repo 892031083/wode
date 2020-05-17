@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:paddingBottom="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:paddingLeft="11dp"
+        android:paddingTop="5dp"
+        android:paddingRight="11dp"
+        android:paddingBottom="5dp"
+        android:background="@drawable/background_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <CheckBox
+            android:checked="true"
+            android:enabled="false"
+            android:id="@+id/radio"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+        <ImageView
+            android:id="@+id/photo"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/background_title"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/radio"
+            android:layout_width="80dp"
+            android:layout_height="80dp" />
+        <TextView
+            android:textSize="12sp"
+            android:id="@+id/title"
+            android:maxLines="1"
+            android:text="这里是商品标题"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/photo"
+            android:layout_alignTop="@id/photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginTop="5dp"
+            android:textSize="11sp"
+            android:id="@+id/mobile"
+            android:text="联系方式:"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/photo"
+            android:layout_below="@id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:paddingBottom="7dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/sum"
+            android:layout_toRightOf="@id/photo"
+            android:layout_alignBottom="@id/photo"
+            android:layout_marginTop="5dp"
+            android:textSize="15sp"
+            android:text="￥100"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</RelativeLayout>

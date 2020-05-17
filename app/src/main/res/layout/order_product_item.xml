@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout android:background="@android:color/white"
+    android:paddingTop="25dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingBottom="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="125dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+        <ImageView
+            android:id="@+id/photo"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/background_title"
+            android:layout_marginLeft="10dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_toRightOf="@id/photo"
+            android:paddingLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/productName"
+                android:layout_marginTop="7dp"
+                android:text="分类商品"
+                android:textSize="15sp"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_marginTop="7dp"
+                android:textSize="15sp"
+                android:text="x1 "
+                android:id="@+id/productNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tab"
+            android:paddingBottom="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="17sp"
+                android:text="￥12"
+                android:id="@+id/productPrice"
+                android:textColor="#ef280e"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    <Button
+        android:backgroundTint="#4F61C9"
+        android:textColor="@android:color/white"
+        android:text="评论"
+        android:id="@+id/commit"
+        android:textSize="11sp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="55dp"
+        android:layout_height="35dp"/>
+    </RelativeLayout>

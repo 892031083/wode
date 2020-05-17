@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@android:color/white"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <LinearLayout
+        android:paddingTop="50dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="20dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="修改密码"
+            android:textSize="30sp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <!--
+            MLinText自己封装了个view
+            感觉自己封装一个比较简洁吧
+        -->
+        <com.example.wode.widget.LoginItemEditText
+            android:background="@drawable/nolineedit"
+            android:id="@+id/codeMobile"
+            app:text="手机号"
+
+            app:hint="请输入手机号"
+            app:textSize="16"
+            android:drawablePadding="13dp"
+            android:layout_marginTop="45dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"/>
+        <com.example.wode.widget.LoginItemEditText
+            android:background="@drawable/nolineedit"
+            android:id="@+id/pass"
+            app:text="密码"
+            app:hint="请输入旧密码"
+            app:textSize="16"
+            android:drawablePadding="13dp"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"/>
+
+        <com.example.wode.widget.LoginItemEditText
+            android:background="@drawable/nolineedit"
+            android:id="@+id/newpass"
+            app:text="新密码"
+            app:hint="请输入新密码"
+            app:textSize="16"
+            android:drawablePadding="13dp"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"/>
+        <com.example.wode.widget.LoginItemEditText
+            android:background="@drawable/nolineedit"
+            android:id="@+id/newpass2"
+            app:text="确认新密码"
+            app:hint="请确认新密码"
+            app:textSize="16"
+            android:drawablePadding="13dp"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"/>
+        <Button
+            android:id="@+id/setBtn"
+            android:layout_marginTop="20dp"
+            android:text="确定修改"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/loginbtnred"
+            android:background="@drawable/login_btn_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <!--    <TextView-->
+        <!--        android:id="@+id/toReBtn"-->
+        <!--        android:textSize="13sp"-->
+        <!--        android:paddingTop="20dp"-->
+        <!--        android:text="@string/toregistered_text"-->
+        <!--        android:background="@drawable/nolineedit"-->
+        <!--        android:layout_gravity="center_horizontal"-->
+        <!--        android:layout_width="wrap_content"-->
+        <!--        android:layout_height="wrap_content"/>-->
+    </LinearLayout>
+</LinearLayout>

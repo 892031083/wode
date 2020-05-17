@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/headImg"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/login_img_background" />
+    <LinearLayout
+        android:layout_below="@id/headImg"
+        android:paddingTop="50dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="20dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:text="@string/loginText"
+            android:textSize="30sp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:paddingTop="6dp"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="@string/login_toregistered_txt"
+                    android:textSize="12sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:textColor="@color/loginbtnred"
+                    android:id="@+id/toregisteredBtn"
+                    android:paddingBottom="10dp"
+                    android:paddingRight="20dp"
+                    android:text="@string/registeredText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        <EditText
+            android:background="@drawable/nolineedit"
+            android:id="@+id/mobileView"
+            android:hint="请输入手机号"
+            android:textSize="15sp"
+            android:drawablePadding="13dp"
+            android:drawableLeft="@mipmap/icon_username"
+            android:layout_marginTop="45dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"/>
+        <EditText
+            android:inputType="textPassword"
+            android:id="@+id/passView"
+            android:background="@drawable/nolineedit"
+            android:hint="输入密码"
+            android:textSize="15sp"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@mipmap/icon_pass"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"/>
+        <Button
+            android:id="@+id/loginBtn"
+            android:layout_marginTop="20dp"
+            android:text="登陆"
+            android:onClick="toLogin"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/loginbtnred"
+            android:background="@drawable/login_btn_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/toReBtn"
+            android:textSize="13sp"
+            android:paddingTop="20dp"
+            android:text="@string/toregistered_text"
+            android:background="@drawable/nolineedit"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <include android:visibility="gone" android:id="@+id/include_reL" layout="@layout/registered_layout"/>
+    <include android:visibility="gone" android:id="@+id/include_code" layout="@layout/layout_code"/>
+
+</RelativeLayout>

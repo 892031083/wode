@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swipe_refresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+ <FrameLayout
+     android:layout_width="match_parent"
+     android:layout_height="match_parent">
+
+     <androidx.recyclerview.widget.RecyclerView
+
+         android:id="@+id/recycler_view"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"/>
+     <LinearLayout
+         android:layout_gravity="bottom"
+         android:id="@+id/footer_view"
+         android:orientation="horizontal"
+         android:gravity="center"
+         android:padding="4dp"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+         <ImageView
+             android:id="@+id/anim_img"
+             android:layout_marginRight="20dp"
+             android:src="@drawable/background_title"
+             android:layout_width="20dp"
+             android:layout_height="20dp"/>
+         <TextView
+             android:padding="4dp"
+             android:text="正在加载"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"/>
+     </LinearLayout>
+ </FrameLayout>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

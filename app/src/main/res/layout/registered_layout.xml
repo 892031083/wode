@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@android:color/white"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/layout_title"/>
+  <LinearLayout
+    android:paddingTop="50dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingBottom="20dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+      <TextView
+          android:text="@string/registeredText"
+          android:textSize="30sp"
+          android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"/>
+    <!--
+        MLinText自己封装了个view
+        感觉自己封装一个比较简洁吧
+    -->
+    <com.example.wode.widget.LoginItemEditText
+        android:background="@drawable/nolineedit"
+        android:id="@+id/registeredMobile"
+        app:text="手机号"
+        app:hint="请输入手机号"
+        app:textSize="16"
+        android:drawablePadding="13dp"
+        android:layout_marginTop="45dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"/>
+    <com.example.wode.widget.LoginItemEditText
+        android:background="@drawable/nolineedit"
+        android:id="@+id/registeredCode"
+        app:text="验证码"
+        app:hint="请输入验证码"
+        app:textSize="16"
+        app:IsBtn="true"
+        android:drawablePadding="13dp"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"/>
+    <com.example.wode.widget.LoginItemEditText
+        android:background="@drawable/nolineedit"
+        android:id="@+id/registeredPass"
+        app:text="密    码"
+        app:hint="请输入密码(6--12位之间)"
+        app:textSize="16"
+        app:IsPass="true"
+        android:drawablePadding="13dp"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"/>
+
+
+
+
+    <Button
+        android:id="@+id/registeredBtn"
+        android:layout_marginTop="20dp"
+        android:text="注册"
+        android:onClick="toLogin"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/loginbtnred"
+        android:background="@drawable/login_btn_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
+</LinearLayout>

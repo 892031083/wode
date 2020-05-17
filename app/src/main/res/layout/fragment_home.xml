@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView android:id="@+id/scroll"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.itheima.loopviewpager.LoopViewPager
+            android:id="@+id/head"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            app:animTime="1000"
+            app:loopTime="4000">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="#55EEEBEB"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="10dp">
+                <com.itheima.loopviewpager.LoopTitleView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:maxLines="1"
+                    android:textColor="#E9E4E4"
+                    android:textSize="12sp" />
+
+                <com.itheima.loopviewpager.LoopDotsView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    app:dotShape="oval"
+                    app:dotSize="4dp" />
+
+            </LinearLayout>
+
+        </com.itheima.loopviewpager.LoopViewPager>
+    <LinearLayout
+        android:id="@+id/navigation"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_below="@id/head"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="140dp">
+        <TextView
+
+            android:background="@drawable/bg_click"
+            android:textSize="12sp"
+            android:gravity="center_horizontal"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:drawableTop="@mipmap/ic_ele"
+            android:drawablePadding="5dp"
+            android:text="电子产品"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:background="@drawable/bg_click"
+            android:textSize="12sp"
+            android:gravity="center_horizontal"
+            android:drawablePadding="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:drawableTop="@mipmap/ic_word"
+            android:text="学习用品"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:background="@drawable/bg_click"
+            android:textSize="12sp"
+            android:gravity="center_horizontal"
+            android:layout_weight="1"
+            android:drawablePadding="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:drawableTop="@mipmap/ic_spo"
+            android:text="体育用品"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:background="@drawable/bg_click"
+            android:textSize="12sp"
+            android:gravity="center_horizontal"
+            android:drawablePadding="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:drawableTop="@mipmap/ic_lift"
+            android:text="生活用品"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="15dp"
+        android:layout_centerHorizontal="true"
+        android:drawableLeft="@drawable/icon_lod"
+        android:drawableRight="@drawable/icon_lod"
+        android:text="热门推荐"
+        android:layout_below="@id/navigation"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:overScrollMode="never"
+        android:layout_below="@id/text"
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>
+</ScrollView>

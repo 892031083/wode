@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="#cccccd"
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Button
+        android:id="@+id/camar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:textSize="15sp"
+        android:text="拍照"/>
+    <Button
+        android:textSize="15sp"
+        android:layout_marginTop="0.8dp"
+        android:id="@+id/imgku"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/camar"
+        android:background="#ffffff"
+        android:text="选择图库"
+        />
+    <Button
+        android:textSize="15sp"
+        android:id="@+id/quxiao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgku"
+        android:background="#ffffff"
+        android:text="取消"
+        android:layout_marginTop="15dp"
+        />
+
+
+</RelativeLayout>

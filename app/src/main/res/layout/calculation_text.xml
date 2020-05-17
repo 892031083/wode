@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/setnum"
+    android:paddingRight="12dp"
+    android:paddingBottom="7dp"
+
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:background="@drawable/background_up"
+        android:textSize="13sp"
+        android:paddingLeft="7dp"
+        android:paddingRight="7dp"
+        android:id="@+id/down"
+        android:text="-"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:textSize="12sp"
+        android:paddingLeft="9dp"
+        android:paddingRight="9dp"
+        android:id="@+id/num"
+        android:text="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:textSize="13sp"
+        android:background="@drawable/background_up"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:id="@+id/up"
+        android:text="+"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>

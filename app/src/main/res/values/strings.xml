@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">学生毕设1</string>
+    <string name="loginText">登陆</string>
+    <string name="login_toregistered_txt">还没有账号，立即</string>
+    <string name="registeredText">注册</string>
+    <string name="toregistered_text">使用验证码登陆</string>
+    <string name="mobileText_registered">手机号</string>
+    <string name="codeloginText">验证码登陆</string>
+</resources>
